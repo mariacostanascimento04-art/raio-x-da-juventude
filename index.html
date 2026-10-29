@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b2c">
+  <meta name="description" content="Relatório de dados sobre juventude brasileira, educação, inclusão digital e oportunidades.">
+  <title>Raio-X da Juventude | Educação, tecnologia e oportunidades</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Raio-X da Juventude, início"><span class="brand-mark" aria-hidden="true">R<span>×</span></span><span>RAIO-X<br><small>DA JUVENTUDE</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-principal" aria-label="Abrir menu"><span></span><span></span></button>
+    <nav id="nav-principal" aria-label="Navegação principal">
+      <a href="#indicadores">Indicadores</a><a href="#achados">Achados</a><a href="#metodologia">Metodologia</a><a href="#intervencoes">Intervenções</a><a href="#fontes">Fontes</a>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <div class="hero-grid" aria-hidden="true"></div><div class="hero-orbit orbit-one" aria-hidden="true"></div><div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="pulse"></span> RELATÓRIO DE INDICADORES · BRASIL</p>
+        <h1 id="titulo-principal">RAIO-X DA<br><em>JUVENTUDE</em></h1>
+        <p class="hero-subtitle">Educação, Tecnologia e Oportunidades para o Futuro</p>
+        <p class="hero-intro">Uma leitura orientada por dados sobre as condições que aproximam ou afastam jovens brasileiros da educação, da inclusão digital e do trabalho digno.</p>
+        <a class="hero-link" href="#indicadores">Explorar os indicadores <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="scan-ring ring-a"></div><div class="scan-ring ring-b"></div><div class="scan-cross cross-a"></div><div class="scan-cross cross-b"></div>
+        <div class="scan-core"><span class="core-label">DADOS<br>EM FOCO</span><strong>BR</strong><span class="core-line"></span><small>2016 — 2025</small></div>
+        <span class="scan-tag tag-one">EDUCAÇÃO</span><span class="scan-tag tag-two">ACESSO</span><span class="scan-tag tag-three">FUTURO</span>
+      </div>
+      <div class="hero-bottom"><span>ANÁLISE SOCIAL E EDUCACIONAL</span><span>FONTES OFICIAIS · PNAD CONTÍNUA · CENSO ESCOLAR</span><span>01 / 04</span></div>
+    </section>
+
+    <section class="intro section-shell" aria-labelledby="intro-title">
+      <div class="section-kicker">01 / CONTEXTO</div><div class="intro-copy"><h2 id="intro-title">O que os dados revelam<br>sobre as oportunidades?</h2><p>Educação, conectividade e inserção produtiva se cruzam de maneiras diferentes ao longo da juventude. Este relatório reúne indicadores publicados pelo IBGE e pelo INEP para tornar essas diferenças legíveis e apoiar propostas de atuação social e educacional.</p><p class="context-note"><span class="note-icon" aria-hidden="true">i</span><span>A notícia “IBGE detalha em coletivas públicas a programação da CONFEST/CONFEGE sobre juventude e tecnologia”, indicada como publicada em 29 de outubro de 2026, é apenas contexto institucional, não uma base estatística. O endereço específico ainda precisa de conferência. Os valores exibidos foram transcritos do resumo fornecido; não foi possível conferir os quadros originais neste ambiente. Consulte as referências antes de apresentar ou reutilizar os números.</span></p></div>
+    </section>
+
+    <section class="metrics-section" id="indicadores" aria-labelledby="metrics-title">
+      <div class="section-shell">
+        <div class="section-heading"><div><div class="section-kicker">02 / PAINEL DE INDICADORES</div><h2 id="metrics-title">Acesso em perspectiva</h2></div><p>Valores selecionados de pesquisas oficiais. Cada indicador tem população e período próprios; compare com atenção.</p></div>
+        <div class="metric-grid" id="metric-cards" aria-live="polite"><div class="loading">Carregando indicadores…</div></div>
+        <div class="charts-grid">
+          <article class="chart-panel chart-wide"><div class="chart-heading"><div><span class="chart-index">A</span><h3>Internet: expansão do acesso</h3></div><span class="chart-unit">% DA POPULAÇÃO 10+</span></div><p class="chart-subtitle">Pessoas de 10 anos ou mais que utilizaram a internet, Brasil · anos selecionados</p><div class="chart-area" id="chart-internet" role="img" aria-label="Gráfico de linha do uso da internet ao longo do tempo"></div><div class="chart-source" data-source="internet_series"></div></article>
+          <article class="chart-panel"><div class="chart-heading"><div><span class="chart-index">B</span><h3>Estudo e ocupação</h3></div><span class="chart-unit">JOVENS · 2024</span></div><p class="chart-subtitle">Pessoas de 15 a 29 anos por condição declarada</p><div class="chart-area chart-tall" id="chart-study-work" role="img" aria-label="Gráfico de barras da situação de estudo e ocupação dos jovens"></div><div class="chart-source" data-source="study_work_2024"></div></article>
+          <article class="chart-panel"><div class="chart-heading"><div><span class="chart-index">C</span><h3>Anos de estudo</h3></div><span class="chart-unit">MÉDIA · 18–29 ANOS</span></div><p class="chart-subtitle">Mudança entre 2016 e 2024 por grupo selecionado</p><div class="chart-area chart-tall" id="chart-years-study" role="img" aria-label="Gráfico comparativo de anos médios de estudo por grupo"></div><div class="chart-source" data-source="study_years_2016_2024"></div></article>
+          <article class="chart-panel"><div class="chart-heading"><div><span class="chart-index">D</span><h3>Conexão nas escolas</h3></div><span class="chart-unit">EDUCAÇÃO INFANTIL · 2024</span></div><p class="chart-subtitle">Escolas com banda larga por dependência administrativa</p><div class="chart-area chart-tall" id="chart-broadband" role="img" aria-label="Gráfico de barras da banda larga em escolas de educação infantil"></div><div class="chart-source" data-source="school_broadband_2024"></div></article>
+          <article class="chart-panel"><div class="chart-heading"><div><span class="chart-index">E</span><h3>Conectividade por recorte</h3></div><span class="chart-unit">2025 · IBGE</span></div><p class="chart-subtitle">Uso da internet em grupos populacionais informados</p><div class="chart-area chart-tall" id="chart-internet-cuts" role="img" aria-label="Gráfico de barras comparando recortes de uso da internet"></div><div class="chart-source" data-source="internet_2025_cuts"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="findings section-shell" id="achados" aria-labelledby="findings-title">
+      <div class="section-kicker">03 / LEITURA DOS RESULTADOS</div><h2 id="findings-title">Desigualdades que merecem atenção</h2>
+      <div class="finding-layout"><div class="finding-lead"><span class="finding-number">01</span><h3>Conectividade cresceu.<br>Acesso não é tudo.</h3><p>O uso da internet alcançou 90,5% da população de 10 anos ou mais em 2025. Ainda assim, o recorte rural e a diferença entre estudantes das redes pública e privada apontam que a experiência digital não é uniforme. O indicador não mede qualidade, franquia ou posse de equipamento.</p></div><div class="finding-stack"><article><span class="finding-number">02</span><div><h3>Trabalho e estudo nem sempre caminham juntos</h3><p>Na distribuição de 2024, 18,5% dos jovens de 15 a 29 anos não estavam ocupados nem estudavam ou se qualificavam. Outros 39,4% estavam ocupados e não estudavam nem se qualificavam. Os grupos descrevem situações distintas, não causas individuais.</p></div></article><article><span class="finding-number">03</span><div><h3>A renda marca uma distância educacional</h3><p>Entre jovens de 18 a 29 anos, a média de anos de estudo em 2024 foi 10,6 no menor quartil de renda e 13,5 no maior: uma diferença descritiva de 2,9 anos.</p></div></article><article><span class="finding-number">04</span><div><h3>Infraestrutura escolar varia por dependência</h3><p>Na educação infantil, os percentuais de escolas com banda larga variaram de 65,1% na rede estadual a 95,7% na federal. O recorte não deve ser generalizado para outras etapas.</p></div></article></div></div>
+      <p class="finding-caveat">Leitura descritiva: diferenças observadas não demonstram, por si sós, relações de causa e efeito.</p>
+    </section>
+
+    <section class="method-section" id="metodologia" aria-labelledby="method-title"><div class="section-shell method-layout"><div><div class="section-kicker">04 / COMO LER</div><h2 id="method-title">Método, recortes<br>e limites</h2><p class="method-intro">Indicadores secundários publicados por instituições oficiais foram organizados em uma estrutura comum para comparação descritiva. Não foi feita inferência causal nem estimativa própria a partir de microdados.</p></div><div class="method-details"><article><span>01</span><div><h3>Fontes independentes</h3><p>PNAD Contínua do IBGE e Censo Escolar do INEP. Cada publicação tem desenho, população e período próprios.</p></div></article><article><span>02</span><div><h3>Períodos explícitos</h3><p>A série de internet usa anos selecionados de 2016 a 2025; educação e trabalho referem-se a 2024; infraestrutura escolar, a 2024.</p></div></article><article><span>03</span><div><h3>Comparabilidade limitada</h3><p>Pessoas, estudantes e escolas são unidades diferentes. Os gráficos preservam o universo descrito e não devem ser comparados como se fossem uma mesma amostra.</p></div></article><article><span>04</span><div><h3>Rastreabilidade</h3><p>Definições, unidades e limitações acompanham cada tabela no arquivo de dados. Os valores foram transcritos do material fornecido e precisam ser conferidos nos quadros originais.</p></div></article></div></div></section>
+
+    <section class="interventions section-shell" id="intervencoes" aria-labelledby="interventions-title"><div class="section-kicker">05 / CAMINHOS DE ATUAÇÃO</div><h2 id="interventions-title">Três pilares para transformar evidência em ação</h2><p class="interventions-intro">As propostas abaixo respondem aos desafios descritos pelos indicadores. São direções de política e programa, não efeitos comprovados por esta análise.</p><div class="pillar-grid"><article class="pillar pillar-cyan"><span class="pillar-number">PILAR 01</span><div class="pillar-symbol" aria-hidden="true">↗</div><h3>Inclusão digital e recursos de estudo</h3><p>Ampliar acesso a conexão estável, equipamentos compartilhados e espaços comunitários de aprendizagem, priorizando territórios rurais e escolas com menor cobertura. Monitorar qualidade e disponibilidade, além da simples presença de internet.</p><div class="pillar-link">INDICADORES RELACIONADOS <span>Internet · Banda larga escolar</span></div></article><article class="pillar pillar-coral"><span class="pillar-number">PILAR 02</span><div class="pillar-symbol" aria-hidden="true">◎</div><h3>Apoio socioemocional e mentoria</h3><p>Fortalecer acompanhamento escolar, orientação de estudos e redes de mentoria, com busca ativa e apoio psicossocial articulado à comunidade. Acompanhar trajetórias sem estigmatizar jovens fora da escola ou do trabalho.</p><div class="pillar-link">INDICADORES RELACIONADOS <span>Estudo e ocupação · Anos de estudo</span></div></article><article class="pillar pillar-lime"><span class="pillar-number">PILAR 03</span><div class="pillar-symbol" aria-hidden="true">⌁</div><h3>Preparação para o futuro</h3><p>Conectar formação técnica, competências digitais e orientação profissional a oportunidades locais de trabalho digno. Criar percursos compatíveis com a conciliação entre estudo, qualificação e ocupação.</p><div class="pillar-link">INDICADORES RELACIONADOS <span>Estudo e ocupação · Escolaridade</span></div></article></div></section>
+
+    <section class="sources-section" id="fontes" aria-labelledby="sources-title"><div class="section-shell sources-layout"><div><div class="section-kicker">06 / TRANSPARÊNCIA</div><h2 id="sources-title">Fontes e referências</h2><p>Consulte as publicações e materiais metodológicos originais antes de reutilizar os números. A página institucional do IBGE sobre a CONFEST/CONFEGE é contexto, não fonte de dados.</p></div><div class="source-list" id="source-list"><div class="loading">Carregando referências…</div></div></div></section>
+    <section class="closing section-shell"><div class="closing-mark" aria-hidden="true">R<span>×</span>J</div><div><div class="section-kicker">EM SÍNTESE</div><h2>Dados melhores.<br>Oportunidades mais justas.</h2><p>Os indicadores mostram avanços e distâncias que convivem. Políticas efetivas exigem escuta dos jovens, dados atualizados e avaliação contínua de resultados, com atenção às diferenças de renda, território e trajetória.</p></div><a href="#inicio" class="back-top" aria-label="Voltar ao início">↑</a></section>
+  </main>
+  <footer class="footer"><span>RAIO-X DA JUVENTUDE · PROJETO DE ANÁLISE SOCIAL</span><span>IBGE · PNAD CONTÍNUA · INEP</span><span>2026</span></footer>
+  <noscript><p class="noscript">Ative JavaScript para visualizar gráficos e referências carregados dos dados do projeto.</p></noscript>
+</body>
+</html>

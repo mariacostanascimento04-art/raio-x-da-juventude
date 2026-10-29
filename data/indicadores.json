@@ -1,0 +1,129 @@
+{
+  "project": {
+    "title": "Raio-X da Juventude",
+    "subtitle": "Educação, Tecnologia e Oportunidades para o Futuro",
+    "data_status": "Valores transcritos do material de fontes oficiais fornecido para o projeto. Requerem conferência visual nas publicações originais antes de uso acadêmico definitivo; a API do IBGE estava inacessível durante a preparação.",
+    "context": {
+      "title": "IBGE detalha em coletivas públicas a programação da CONFEST/CONFEGE sobre juventude e tecnologia",
+      "date": "2026-10-29",
+      "url": "https://agenciadenoticias.ibge.gov.br/",
+      "note": "Contextualização institucional informada no escopo do projeto. A notícia não é fonte estatística e o link específico não pôde ser confirmado neste ambiente."
+    }
+  },
+  "sources": [
+    {
+      "id": "ibge_tic",
+      "institution": "IBGE",
+      "title": "PNAD Contínua: Tecnologia da Informação e Comunicação (TIC)",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/17270-pnad-continua.html",
+      "note": "Portal oficial da pesquisa. Indicadores de utilização da internet apresentados no projeto."
+    },
+    {
+      "id": "ibge_educacao",
+      "institution": "IBGE",
+      "title": "PNAD Contínua: Educação 2024",
+      "url": "https://www.ibge.gov.br/estatisticas/sociais/educacao/17270-pnad-continua.html",
+      "note": "Portal oficial da PNAD Contínua, com publicações e materiais da pesquisa. Conferir os quadros de 2024 antes da apresentação."
+    },
+    {
+      "id": "inep_censo",
+      "institution": "INEP",
+      "title": "Censo Escolar da Educação Básica 2024: Resumo Técnico",
+      "url": "https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar/resultados",
+      "note": "Portal oficial de resultados do Censo Escolar. Indicador de banda larga refere-se apenas às escolas de educação infantil."
+    },
+    {
+      "id": "inep_microdados",
+      "institution": "INEP",
+      "title": "Microdados do Censo Escolar",
+      "url": "https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar",
+      "note": "Fonte para análises adicionais por escola e etapa, sujeita à documentação e ao tratamento dos microdados."
+    }
+  ],
+  "indicators": [
+    {
+      "id": "internet_series",
+      "title": "Utilização da internet no Brasil",
+      "source_id": "ibge_tic",
+      "reference_years": [2016, 2019, 2023, 2024, 2025],
+      "population": "Pessoas de 10 anos ou mais",
+      "unit": "Percentual (%)",
+      "definition": "Proporção de pessoas de 10 anos ou mais que utilizaram a internet no período de referência da PNAD Contínua TIC.",
+      "limitation": "Não representa exclusivamente jovens. Os anos são selecionados e não permitem inferir causalidade nem mudanças metodológicas sem consultar as notas técnicas.",
+      "values": [
+        {"year": 2016, "value": 66.0},
+        {"year": 2019, "value": 79.4},
+        {"year": 2023, "value": 88.0},
+        {"year": 2024, "value": 89.1},
+        {"year": 2025, "value": 90.5}
+      ]
+    },
+    {
+      "id": "internet_2025_cuts",
+      "title": "Utilização da internet por recorte, 2025",
+      "source_id": "ibge_tic",
+      "reference_years": [2025],
+      "population": "Moradores de áreas urbanas e rurais; estudantes das redes pública e privada",
+      "unit": "Percentual (%)",
+      "definition": "Percentual de pessoas que utilizaram a internet em cada recorte populacional informado.",
+      "limitation": "Os recortes têm populações de referência distintas. O acesso não informa qualidade da conexão, disponibilidade de equipamentos ou intensidade de uso.",
+      "values": [
+        {"group": "Área urbana", "value": 91.5},
+        {"group": "Área rural", "value": 83.0},
+        {"group": "Estudantes da rede pública", "value": 89.9},
+        {"group": "Estudantes da rede privada", "value": 97.2}
+      ]
+    },
+    {
+      "id": "study_work_2024",
+      "title": "Estudo, qualificação e ocupação entre jovens, 2024",
+      "source_id": "ibge_educacao",
+      "reference_years": [2024],
+      "population": "Pessoas de 15 a 29 anos; estimativa populacional informada de 48,0 milhões",
+      "unit": "Percentual (%)",
+      "definition": "Distribuição percentual dos jovens segundo combinação de condição de ocupação e estudo ou qualificação.",
+      "limitation": "As categorias refletem o resumo recebido e precisam ser conferidas na publicação. Os percentuais somam 99,6% por arredondamento. Não equivalem necessariamente à frequência escolar regular.",
+      "values": [
+        {"group": "Ocupados e estudavam ou se qualificavam", "value": 16.4},
+        {"group": "Não ocupados e não estudavam nem se qualificavam", "value": 18.5},
+        {"group": "Não ocupados e estudavam ou se qualificavam", "value": 25.3},
+        {"group": "Ocupados e não estudavam nem se qualificavam", "value": 39.4}
+      ]
+    },
+    {
+      "id": "study_years_2016_2024",
+      "title": "Média de anos de estudo, jovens de 18 a 29 anos",
+      "source_id": "ibge_educacao",
+      "reference_years": [2016, 2024],
+      "population": "Pessoas de 18 a 29 anos, por Brasil e grupos selecionados",
+      "unit": "Anos de estudo (média)",
+      "definition": "Média de anos de estudo concluídos para o grupo informado.",
+      "limitation": "Grupos de raça/cor, localização e quartil de renda são dimensões diferentes e podem se sobrepor. Quartis de renda são os definidos pela publicação. Valores devem ser confirmados no quadro original.",
+      "values": [
+        {"group": "Brasil", "2016": 11.1, "2024": 11.9},
+        {"group": "Branca", "2016": 11.9, "2024": 12.5},
+        {"group": "Preta ou parda", "2016": 10.5, "2024": 11.5},
+        {"group": "Área urbana", "2016": 11.4, "2024": 12.1},
+        {"group": "Área rural", "2016": 9.4, "2024": 10.5},
+        {"group": "Menor quartil de renda", "2016": 9.3, "2024": 10.6},
+        {"group": "Maior quartil de renda", "2016": 13.3, "2024": 13.5}
+      ]
+    },
+    {
+      "id": "school_broadband_2024",
+      "title": "Escolas de educação infantil com internet banda larga, 2024",
+      "source_id": "inep_censo",
+      "reference_years": [2024],
+      "population": "Escolas de educação infantil, por dependência administrativa",
+      "unit": "Percentual de escolas (%)",
+      "definition": "Proporção das escolas de educação infantil com internet banda larga, segundo dependência administrativa.",
+      "limitation": "Refere-se somente à educação infantil. A presença de banda larga não mede velocidade, estabilidade, equipamentos disponíveis nem uso pedagógico.",
+      "values": [
+        {"group": "Federal", "value": 95.7},
+        {"group": "Estadual", "value": 65.1},
+        {"group": "Municipal", "value": 73.5},
+        {"group": "Privada", "value": 90.0}
+      ]
+    }
+  ]
+}
